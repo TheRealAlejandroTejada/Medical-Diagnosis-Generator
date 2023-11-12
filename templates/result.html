@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Diagnosresultat</h2>
+    <p>Diagnos: {% if prediction == 1 %} Positiv {% else %} Negativ {% endif %}</p>
+    <p>{{ diagnosis }}</p>
+
+    <h3>Livsstilsrekommendationer:</h3>
+    <p>{{ lifestyle_recommendations }}</p>
+
+    <h3>Förebyggande åtgärder:</h3>
+    <p>{{ prevention_recommendations }}</p>
+{% endblock %}
